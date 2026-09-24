@@ -1,0 +1,177 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+body{
+background:#f5f7fb;
+color:#222;
+}
+header{
+background:linear-gradient(135deg,#38b0d4,#9e4f45);
+color:white;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:999;
+}
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+.logo img{
+width:55px;
+height:55px;
+border-radius:50%;
+background:white;
+padding:1px;
+}
+.logo h2{
+font-size:22px;
+}
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+.hero{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:space-between;
+padding:70px 8%;
+background:white;
+}
+.hero-text{
+flex:1;
+min-width:280px;
+}
+.hero-text h1{
+font-size:48px;
+color:#63a9c9;
+margin-bottom:15px;
+}
+.hero-text p{
+line-height:28px;
+margin-bottom:25px;
+}
+.btn{
+display:inline-block;
+background:#60b3b9;
+color:white;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+.hero img{
+    height: 200px;
+width:420px;
+max-width:90%;
+border-radius:1px;
+display: flex;
+align-items: center;
+margin-top: 20px;
+margin-left: 50px;
+
+}
+section{
+padding:70px 8%;
+}
+.title{
+text-align:center;
+font-size:34px;
+color:#60b3b9;
+margin-bottom:40px;
+}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
+}
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+text-align:center;
+}
+.card h3{
+margin:15px 0;
+color:#60b3b9;
+}
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+.about img{
+width:100%;
+border-radius:15px;
+}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+}
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:35px;
+}
+form input,
+form textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+form button{
+width:100%;
+padding:14px;
+border:none;
+background:#60b3b9;
+color:white;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+}
+footer{
+background:#60b3b9;
+color:white;
+text-align:center;
+padding:20px;
+}
+@media(max-width:768px){
+.hero,
+.about,
+.contact{
+grid-template-columns:1fr;
+display:grid;
+}
+.hero{
+text-align:center;
+}
+.hero h1{
+font-size:36px;
+}
+nav{
+display:none;
+}
+}
